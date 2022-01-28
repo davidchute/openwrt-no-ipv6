@@ -5,9 +5,9 @@
 
 ## Build and extract the upgrade file needed
 
-docker build . -t owrt
-docker run --rm owrt:latest cat /outputs.tgz > outputs.tgz
-tar xzvf outputs.tgz bin/targets/ar71xx/tiny/openwrt-19.07.8-ar71xx-tiny-tl-wa901nd-v3-squashfs-sysupgrade.bin
+    docker build . -t owrt
+    docker run --rm owrt:latest cat /outputs.tgz > outputs.tgz
+    tar xzvf outputs.tgz bin/targets/ar71xx/tiny/openwrt-19.07.8-ar71xx-tiny-tl-wa901nd-v3-squashfs-sysupgrade.bin
 
 ## Don't foget the config
 
